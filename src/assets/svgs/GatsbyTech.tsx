@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function GatsbyTech(props) {
+export default function GatsbyTech(props: any) {
   return (
     <svg
       width={321}

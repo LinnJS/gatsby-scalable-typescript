@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Scalable Starter`,
@@ -13,6 +15,17 @@ module.exports = {
         theme_color: `#744C9E`,
         display: `standalone`,
         icon: `src/assets/images/icon.png`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        assets: path.join(__dirname, 'src/assets'),
+        global: path.join(__dirname, 'src/global'),
+        pages: path.join(__dirname, 'src/pages'),
+        primitives: path.join(__dirname, 'src/primitives'),
+        utils: path.join(__dirname, 'src/utils'),
       },
     },
     {

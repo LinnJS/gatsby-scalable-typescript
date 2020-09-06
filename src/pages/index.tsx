@@ -8,7 +8,7 @@ const LandingPage = () => (
   <Layout>
     <Page>
       <h1>Gatsby Scalable</h1>
-      <p>Starter</p>
+      <p>TypeScript</p>
       <GatsbyTech />
     </Page>
   </Layout>

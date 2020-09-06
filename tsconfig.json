@@ -13,7 +13,16 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "src": ["./src/*"],
+      "assets": ["./src/assets"],
+      "global": ["./src/global"],
+      "pages": ["./src/pages"],
+      "primitives": ["./src/primitives"],
+      "utils": ["./src/utils"]
+    }
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "public", ".cache"]
