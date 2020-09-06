@@ -1,9 +1,17 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es6: true,
   },
-  extends: ['plugin:react/recommended', 'standard', 'prettier', 'prettier/react'],
+  extends: [
+    'plugin:react/recommended',
+    'standard',
+    'prettier',
+    'prettier/react',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -15,7 +23,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'import', 'jsx-a11y', 'promise', 'standard', 'prettier'],
+  plugins: ['@typescript-eslint', 'react', 'import', 'jsx-a11y', 'promise', 'standard', 'prettier'],
   rules: {
     'react/jsx-filename-extension': [
       1,
@@ -24,6 +32,8 @@ module.exports = {
       },
     ],
     'prettier/prettier': 'error',
+    'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
   settings: {
     react: {
@@ -35,4 +45,14 @@ module.exports = {
       { name: 'Link', linkAttribute: 'to' },
     ],
   },
+  overrides: [
+    // Override some TypeScript rules just for .js files
+    {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+      },
+    },
+  ],
 };
