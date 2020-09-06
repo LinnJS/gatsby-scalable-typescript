@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import reset from 'styled-reset-advanced';
 
