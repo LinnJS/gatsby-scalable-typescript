@@ -5,6 +5,10 @@ const Button = styled.button`
   background: rebeccapurple;
   border-radius: 6px;
   color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default Button;
