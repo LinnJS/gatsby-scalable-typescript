@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, ReactNode } from 'react';
 import Img from 'gatsby-image';
 import styled, { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
@@ -8,7 +7,11 @@ import { StaticQuery, graphql } from 'gatsby';
 import theme from 'src/global/theme';
 import GlobalStyle from './GlobalStyle';
 
-const Layout = ({ children }) => {
+interface IProps {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: IProps) => {
   const [isLightTheme, toggleTheme] = useState(true);
 
   return (
@@ -55,10 +58,6 @@ const Layout = ({ children }) => {
       )}
     />
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 const Header = styled.header`

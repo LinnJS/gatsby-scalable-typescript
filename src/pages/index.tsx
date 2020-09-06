@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 import Layout from 'src/global/Layout';
 import { GatsbyTech } from 'src/assets/svgs';
 
-const LandingPage = () => (
+const LandingPage = (): ReactNode => (
   <Layout>
     <Page>
       <h1>Gatsby Scalable</h1>
-      <p>Starter</p>
+      <p>TypeScript</p>
       <GatsbyTech />
     </Page>
   </Layout>

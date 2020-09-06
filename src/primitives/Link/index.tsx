@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import { Link as GatsbyLink } from 'gatsby';
 
-const Link = (props) => {
+interface IProps {
+  children: ReactNode;
+  path: string;
+}
+
+const Link = (props: IProps): ReactNode => {
   const { path, children } = props;
   // if link is external use an anchor otherwise use GatsbyLink
   const urlRegex = new RegExp(

@@ -17,7 +17,7 @@ const defaultTheme = {
   light: theme,
 };
 
-const Decorator = storyFn => (
+const Decorator = (storyFn) => (
   <Wrapper theme={theme.light}>
     <GlobalStyle />
     {storyFn()}
@@ -32,14 +32,14 @@ global.___loader = {
 };
 
 global.__PATH_PREFIX__ = '';
-window.___navigate = pathname => {
+window.___navigate = (pathname) => {
   action('NavigateTo:')(pathname);
 };
 
-const req = require.context('../src', true, /\.stories\.js$/);
+const req = require.context('../src', true, /\.stories\.tsx$/);
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach((filename) => req(filename));
 }
 
 configure(loadStories, module);

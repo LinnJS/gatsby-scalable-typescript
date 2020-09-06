@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  Gatsby Scalable Starter
+  Gatsby Scalable TypeScript 
 </h1>
 <p align="center">
   Gatsby starter that uses all the extras to get you up and running with scalable architecture, and workflow as fast as possible.
@@ -14,6 +14,7 @@
 ## What's inside?
 
 - Gatsby (v2)
+- TypeScript (v4)
 - Storybook (v5)
 - Styled Components with Theming (v4)
 - Styled Reset (Advanced)
