@@ -36,10 +36,10 @@
     }
   },
   "dependencies": {
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8",
+    "@types/react": "^16.9.55",
+    "@types/react-dom": "^16.9.9",
     "@types/react-helmet": "^6.1.0",
-    "@types/styled-components": "^5.1.3",
+    "@types/styled-components": "^5.1.4",
     "gatsby": "^2.24.91",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-manifest": "^2.4.37",
@@ -52,8 +52,8 @@
     "gatsby-source-filesystem": "^2.3.37",
     "gatsby-transformer-sharp": "^2.5.20",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.2.0",
     "styled-reset-advanced": "^1.0.1"
@@ -64,7 +64,7 @@
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addons": "^6.0.27",
     "@storybook/react": "^6.0.27",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.0.1",
     "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.12.1",
@@ -78,8 +78,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-standard": "^4.0.2",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.5"
   }
 }
