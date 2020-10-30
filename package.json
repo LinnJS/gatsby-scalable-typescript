@@ -64,7 +64,7 @@
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addons": "^6.0.27",
     "@storybook/react": "^6.0.27",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.0.1",
     "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.12.1",
