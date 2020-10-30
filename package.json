@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-scalable-typescript",
-  "description": "Gatsby Scalable Starter, the starter with all the extras to quick start a scalable GatsbyJS application with TypeScript",
+  "name": "hyve-email",
+  "description": "Hyve email security",
   "version": "0.1.0",
   "author": "Justin Linn <linnjsconsulting@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LinnJS/gatsby-scalable-typescript"
+    "url": "https://github.com/LinnJS/hyve-eamil"
   },
   "keywords": [
     "gatsby",
@@ -59,11 +59,11 @@
     "styled-reset-advanced": "^1.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.0.21",
-    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-links": "^6.0.27",
     "@storybook/addon-notes": "^5.3.21",
-    "@storybook/addons": "^6.0.21",
-    "@storybook/react": "^6.0.21",
+    "@storybook/addons": "^6.0.27",
+    "@storybook/react": "^6.0.27",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "babel-plugin-styled-components": "^1.11.1",
