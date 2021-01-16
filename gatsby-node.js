@@ -4,13 +4,5 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path');
-
-// enables absolute imports
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-    },
-  });
-};
+const requireEsm = require('esm')(module);
+module.exports = requireEsm('./gatsby-node.esm.js');
