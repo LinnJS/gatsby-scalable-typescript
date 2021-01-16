@@ -52,6 +52,8 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error'],
       },
     },
   ],

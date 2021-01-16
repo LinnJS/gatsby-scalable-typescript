@@ -41,7 +41,7 @@ const Layout = ({ children }: IProps) => {
         }
       `}
       render={(data) => (
-        <div>
+        <>
           <Helmet>
             <title>{data.site.siteMetadata.title}</title>
             <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -49,12 +49,16 @@ const Layout = ({ children }: IProps) => {
           <ThemeProvider theme={isLightTheme ? theme.light : theme.dark}>
             <GlobalStyle />
             <Header>
-              <Img fixed={data.imageSharp.fixed} />
-              Gatsby Scalable <button onClick={() => toggleTheme(!isLightTheme)}>Toggle Theme</button>
+              <div>
+                <Img fixed={data.imageSharp.fixed} />
+                <span>Gatsby Scalable</span>
+              </div>
+
+              <button onClick={() => toggleTheme(!isLightTheme)}>Toggle Theme</button>
             </Header>
             <>{children}</>
           </ThemeProvider>
-        </div>
+        </>
       )}
     />
   );
@@ -66,11 +70,22 @@ const Header = styled.header`
   display: flex;
   height: 70px;
   justify-content: space-between;
-  left: 0;
+  flex: 1;
   padding: 15px 30px;
   position: fixed;
+  left: 0;
   right: 0;
   top: 0;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
+    }
+  }
 
   button {
     background: ${({ theme }) => theme.buttonBackground};
