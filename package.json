@@ -19,16 +19,17 @@
     "esm"
   ],
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop -H 0.0.0.0",
-    "open": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop -H 0.0.0.0 -o",
-    "storybook": "cross-env NODE_OPTIONS=\"-r esm\" start-storybook -p 9000 -c .storybook",
-    "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
-    "build:storybook": "cross-env NODE_OPTIONS=\"-r esm\" build-storybook -c .storybook -o storybook",
+    "start": "gatsby develop -H 0.0.0.0",
+    "open": "gatsby develop -H 0.0.0.0 -o",
+    "storybook": "start-storybook -p 9000 -c .storybook",
+    "build": "gatsby build",
+    "build:storybook": "build-storybook -c .storybook -o storybook",
     "build:all": "gatsby build && build-storybook -c .storybook -o storybook",
-    "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve -o -p 8080",
+    "serve": "gatsby serve -o -p 8080",
     "clean": "gatsby clean",
-    "lint": "eslint src -c .eslintrc.js --ext js,jsx",
-    "lint:fix": "eslint src -c .eslintrc.js --fix --ext js,jsx",
+    "lint": "eslint src -c .eslintrc.js --ext js,jsx,ts,tsx",
+    "lint:fix": "eslint src -c .eslintrc.js --fix --ext js,jsx,ts,tsx",
+    "prepare": "husky install",
     "type-check": "tsc --noEmit"
   },
   "husky": {
@@ -82,7 +83,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-standard": "^5.0.0",
     "esm": "^3.2.25",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
