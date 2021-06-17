@@ -4,14 +4,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'standard',
-    'prettier',
-    'prettier/react',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-  ],
+  extends: ['plugin:react/recommended', 'standard', 'prettier', 'prettier', 'plugin:@typescript-eslint/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -34,6 +27,8 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
     '@typescript-eslint/explicit-function-return-type': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
   },
   settings: {
     react: {
